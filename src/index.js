@@ -18,7 +18,7 @@ app.use(roteadorLogin);
 app.get("/", ( req, res) => {
   console.log("Rota GET/ solicitada");
   res.json({
-    nome: "Luis Henrique",                   // Substitua pelo seu nome
+    nome: "isabelly",                   // Substitua pelo seu nome
   });
 });
 
