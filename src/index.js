@@ -7,10 +7,11 @@ import express from "express";
 dotenv.config();
 
 const app = express();                        // Instancia o Express
-const port = 3000;                            // Define a porta
+const port = 3000;                            // Define a 
+
+app.use(cors());  
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());  
-app.use(cors());  
 app.use(roteadorUsuario);
 app.use(roteadorLogin);
 
